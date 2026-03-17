@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GLICMACK - Revolutionary Text-to-3D AI for Complete Game Generation. Create photorealistic 3D assets, characters, and environments instantly.">
-    <meta name="keywords" content="text to 3D, AI game generation, 3D modeling, game development, Unity, Unreal Engine">
-    <meta name="author" content="">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="GLICMACK - Complete Game Generation AI">
-    <meta property="og:description" content="Revolutionary Text-to-3D AI for creating photorealistic game assets instantly">
+    <meta name="description" content="GLICMACK — Describe a fantasy world in text. Get a walkable, interactive 3D scene in Unity. AI-powered scene generation for indie game developers.">
+    <meta name="keywords" content="text to game, AI game scene generator, Unity AI tools, indie game development, fantasy game prototyping, medieval game assets">
+    <meta name="author" content="GLICMACK">
+    <meta property="og:title" content="GLICMACK — Text to Playable Game Scenes">
+    <meta property="og:description" content="Describe a fantasy world. Get a walkable, interactive 3D scene in Unity. Built for indie game developers.">
     <meta property="og:type" content="website">
-    
-    <title>GLICMACK - Complete Game Generation AI </title>
-    
+    <meta property="og:url" content="https://glicmack.com">
+    <title>GLICMACK — Text to Playable Game Scenes</title>
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF40L1TKWE"></script>
     <script>
@@ -22,265 +20,230 @@
         gtag('js', new Date());
         gtag('config', 'G-QF40L1TKWE');
     </script>
-    
-    <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <a href="index.html" class="logo">
-                    <span class="logo-text">GLICMACK</span>
-                    <span class="logo-sub"></span>
-                </a>
-                <div class="nav-links">
-                    <a href="index.html" class="nav-link active">Home</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="blog.html" class="nav-link">Blog</a>
-                    <a href="roadmap.html" class="nav-link">Roadmap</a>
-                    <a href="#waitlist" class="nav-link cta-button">Join Waitlist</a>
-                </div>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Build Complete Games<br>
-                    <span class="gradient-text">From Simple Text</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Revolutionary Text-to-3D AI that generates photorealistic characters, environments, and assets. Game-ready for Unreal Engine & Unity.
-                </p>
-                <div class="hero-cta">
-                    <a href="#waitlist" class="button button-primary">Join the Waitlist</a>
-                    <a href="#features" class="button button-secondary">Explore Features</a>
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-content">
+            <a href="index.html" class="logo">GLICMACK</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#how" class="nav-link">How it works</a>
+                <a href="#status" class="nav-link">Status</a>
+                <a href="#approach" class="nav-link">Our approach</a>
+                <a href="#waitlist" class="nav-link cta-btn">Get early access</a>
+            </div>
+            <button class="mobile-toggle" id="mobileMenuToggle"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="container">
+        <div class="hero-inner">
+            <div class="hero-tag">AI-powered scene generation for Unity</div>
+            <h1>Describe a world.<br><span class="accent-text">Play it in minutes.</span></h1>
+            <p class="hero-sub">GLICMACK turns text descriptions into walkable, interactive 3D game scenes in Unity. Built for indie developers who prototype fantasy worlds.</p>
+
+            <div class="terminal">
+                <div class="terminal-bar">
+                    <div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>
+                    <span class="terminal-title">glicmack — scene generator</span>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Proprietary Tech</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">Real-time</span>
-                        <span class="stat-label">Physics Simulation</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">Ultra-HD</span>
-                        <span class="stat-label">Photorealistic Quality</span>
-                    </div>
+                <div class="terminal-body">
+                    <span class="tp">&gt;</span><span class="tt"> A cozy medieval tavern with a stone fireplace,</span><br>
+                    <span class="tt">&nbsp; three oak tables, ale barrels behind the bar,</span><br>
+                    <span class="tt">&nbsp; and a narrow staircase to the second floor</span><br><br>
+                    <span class="tc">// parsing scene description...</span><br>
+                    <span class="tc">// resolving 14 assets from library...</span><br>
+                    <span class="tc">// generating 2 custom props via AI...</span><br>
+                    <span class="tc">// assembling scene in Unity...</span><br><br>
+                    <span class="to">&#10003; Scene ready — 14 objects placed, lit, interactive</span><br>
+                    <span class="to">&#10003; First-person walkthrough enabled</span><br>
+                    <span class="to">&#10003; Open in Unity Editor to customize</span><span class="cursor"></span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">Complete Game Generation Pipeline</h2>
-            <p class="section-subtitle">From concept to game-ready assets in minutes, not months</p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎮</div>
-                    <h3>Complete Characters</h3>
-                    <p>Generate photorealistic human characters with strand-level hair simulation, subsurface scattering, and real-time physics.</p>
+            <div class="hero-buttons">
+                <a href="#waitlist" class="btn-primary">Get early access</a>
+                <a href="https://youtube.com/@glicmack" target="_blank" class="btn-ghost">Watch dev logs</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How it works -->
+<section id="how" class="section">
+    <div class="container">
+        <span class="tag">How it works</span>
+        <h2>Text in. Playable scene out.</h2>
+        <p class="lead">You describe a room. Our AI pipeline plans the scene, finds or generates assets, and assembles everything in Unity — with lighting, collisions, and interactions.</p>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">01</div>
+                <div class="step-body">
+                    <h3>Describe your scene</h3>
+                    <p>Write a natural language description of any fantasy or medieval interior. A tavern, a throne room, a dungeon cell, a blacksmith's workshop.</p>
+                    <span class="step-tech">Input: plain text prompt</span>
                 </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3>Dynamic Environments</h3>
-                    <p>Create expansive 3D environments and landscapes from text descriptions. Complete with lighting, textures, and atmosphere.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">02</div>
+                <div class="step-body">
+                    <h3>AI plans the layout</h3>
+                    <p>Our scene planner understands spatial relationships and medieval architecture. It decides what goes where — fireplace against the wall, barrels behind the counter, torches flanking the door.</p>
+                    <span class="step-tech">Powered by: LLM scene planner → structured scene graph</span>
                 </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Game Assets</h3>
-                    <p>Generate any game asset - weapons, props, vehicles, architecture. All optimized for real-time rendering.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">03</div>
+                <div class="step-body">
+                    <h3>Assets matched or generated</h3>
+                    <p>Common props pull from our curated medieval library for instant, consistent results. Unusual items get generated on-demand via AI. Every asset is game-ready.</p>
+                    <span class="step-tech">Hybrid: curated library + AI generation APIs</span>
                 </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Real-time Physics</h3>
-                    <p>Built-in physics simulation using Position-Based Dynamics. Your assets move and interact naturally.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Advanced Materials</h3>
-                    <p>Automatic PBR materials with advanced lighting effects, reflections, and physically accurate shading.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🔧</div>
-                    <h3>Engine Ready</h3>
-                    <p>Export directly to Unreal Engine and Unity. Optimized topology, clean UVs, and proper rigging included.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">04</div>
+                <div class="step-body">
+                    <h3>Walk through your creation</h3>
+                    <p>The scene assembles in Unity with proper lighting, NavMesh, collisions, and interactive objects. Doors open. Fires crackle. Walk through in first person, then customize in the editor.</p>
+                    <span class="step-tech">Output: Unity scene with interactions + atmosphere</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Technology Section -->
-    <section class="technology">
-        <div class="container">
-            <h2 class="section-title">Proprietary Multi-AI Architecture</h2>
-            <p class="section-subtitle">Built from scratch for maximum quality and complete IP ownership</p>
-            
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <h4>Geometry Generation</h4>
-                    <p>Specialized AI for creating precise 3D geometry with optimized topology</p>
-                </div>
-                <div class="tech-item">
-                    <h4>Texture Synthesis</h4>
-                    <p>Advanced neural rendering for photorealistic textures and materials</p>
-                </div>
-                <div class="tech-item">
-                    <h4>Assembly & Rigging</h4>
-                    <p>Intelligent system that assembles components and creates animation-ready rigs</p>
-                </div>
+<!-- Status -->
+<section id="status" class="section section-alt">
+    <div class="container">
+        <span class="tag">Current status</span>
+        <h2>Where we are right now</h2>
+        <p class="lead">We believe in transparency. Here's exactly what's built, what's next, and what's on the horizon.</p>
+
+        <div class="status-grid">
+            <div class="status-card">
+                <span class="badge badge-active">Building now</span>
+                <h3>Scene planner AI</h3>
+                <p>The brain that converts text descriptions into structured scene layouts with spatial awareness and medieval architecture knowledge.</p>
+            </div>
+            <div class="status-card">
+                <span class="badge badge-active">Building now</span>
+                <h3>Asset library</h3>
+                <p>Curating 200+ medieval and fantasy props with semantic tags for intelligent matching — tables, barrels, torches, furniture, architecture.</p>
+            </div>
+            <div class="status-card">
+                <span class="badge badge-next">Next up</span>
+                <h3>Unity plugin</h3>
+                <p>The bridge between our AI backend and Unity Editor. Receives scene data, imports assets, places them, and sets up lighting automatically.</p>
+            </div>
+            <div class="status-card">
+                <span class="badge badge-next">Next up</span>
+                <h3>Walkthrough mode</h3>
+                <p>First-person camera, NavMesh baking, collision setup, and atmospheric effects. Making generated scenes truly playable.</p>
+            </div>
+            <div class="status-card">
+                <span class="badge badge-later">On the horizon</span>
+                <h3>Interactive objects</h3>
+                <p>Doors that open, fires that toggle, chairs you can sit in. Scene-aware interaction logic generated from the description.</p>
+            </div>
+            <div class="status-card">
+                <span class="badge badge-later">On the horizon</span>
+                <h3>More room types</h3>
+                <p>Beyond taverns — throne rooms, dungeons, libraries, markets, temples. Each with genre-specific layout intelligence.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Building in Public Section -->
-    <section class="building-public">
-        <div class="container">
-            <div class="building-content">
-                <h2>Building in Public</h2>
-                <p>Follow our complete development journey from day one. Every challenge, every breakthrough, every lesson learned.</p>
-                <div class="social-links">
-                    <a href="https://twitter.com/glicmack" target="_blank" class="social-button">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                        </svg>
-                        Follow on X
-                    </a>
-                    <a href="https://youtube.com/@glicmack" target="_blank" class="social-button">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                        </svg>
-                        Watch Journey
-                    </a>
-                </div>
+<!-- Our Approach -->
+<section id="approach" class="section">
+    <div class="container">
+        <span class="tag">Our approach</span>
+        <h2>What we are — and aren't</h2>
+
+        <div class="approach-card">
+            <h3>We're an orchestrator, not a model trainer</h3>
+            <p>We don't pretend to have built our own 3D generation model from scratch. The best text-to-3D models already exist. Our value is the intelligence layer on top — understanding how medieval spaces work, how to compose a scene that feels right, and delivering it ready-to-play in Unity.</p>
+        </div>
+
+        <div class="approach-card">
+            <h3>Built by a solo founder, in public</h3>
+            <p>GLICMACK is bootstrapped and built in the open. Every week, you can follow the real development on YouTube and X — real progress, real challenges, no fake demos.</p>
+            <ul class="check-list">
+                <li class="li-yes"><span>&#10003;</span> Weekly dev logs on YouTube</li>
+                <li class="li-yes"><span>&#10003;</span> Progress threads on X/Twitter</li>
+                <li class="li-yes"><span>&#10003;</span> Honest about what works and what doesn't</li>
+                <li class="li-no"><span>&#10007;</span> No fake screenshots or pre-rendered demos</li>
+                <li class="li-no"><span>&#10007;</span> No claiming features before they exist</li>
+            </ul>
+        </div>
+
+        <div class="approach-card">
+            <h3>Focused on one thing, done well</h3>
+            <p>We're not trying to generate entire games from scratch. We're making the single best tool for creating fantasy and medieval game interiors from text, inside Unity. Depth over breadth.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Follow -->
+<section class="section section-alt follow-section">
+    <div class="container" style="text-align:center;">
+        <span class="tag">Follow the journey</span>
+        <h2>Building in public</h2>
+        <p class="lead" style="margin-left:auto;margin-right:auto;">Weekly dev logs, progress threads, and honest updates.<br>Watch a solo founder build an AI game tool from zero.</p>
+        <div class="social-row">
+            <a href="https://twitter.com/glicmack" target="_blank" class="social-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                Follow on X
+            </a>
+            <a href="https://youtube.com/@glicmack" target="_blank" class="social-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                Watch dev logs
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Waitlist -->
+<section id="waitlist" class="section waitlist-section">
+    <div class="container" style="text-align:center;">
+        <span class="tag">Early access</span>
+        <h2>Get in early</h2>
+        <p class="lead" style="margin-left:auto;margin-right:auto;">We're building toward a working demo. Join the list to get notified when it's ready — plus weekly behind-the-scenes updates.</p>
+        <form class="waitlist-form" id="waitlistForm">
+            <input type="email" placeholder="you@studio.com" required id="emailInput" class="email-input">
+            <button type="submit" class="btn-primary">Join</button>
+        </form>
+        <p class="waitlist-note">No spam. Just real updates when we have something to show.</p>
+        <div id="formMessage" class="form-message"></div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <span class="footer-brand">&copy; 2026 GLICMACK. Built in Surat, India.</span>
+            <div class="footer-links">
+                <a href="https://twitter.com/glicmack" target="_blank">X / Twitter</a>
+                <a href="https://youtube.com/@glicmack" target="_blank">YouTube</a>
+                <a href="mailto:prince@glicmack.com">Contact</a>
             </div>
         </div>
-    </section>
+    </div>
+</footer>
 
-    <!-- Blog Preview Section -->
-    <section class="blog-preview">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Latest Updates</h2>
-                <a href="blog.html" class="view-all">View All Posts →</a>
-            </div>
-            
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <div class="blog-category">Development Update</div>
-                    <h3>Building Our Multi-AI Architecture</h3>
-                    <p>Why we chose to separate geometry generation, texture synthesis, and assembly into specialized AI models...</p>
-                    <div class="blog-meta">
-                        <span class="blog-date">Nov 10, 2025</span>
-                        <span class="blog-read-time">5 min read</span>
-                    </div>
-                </article>
-                
-                <article class="blog-card">
-                    <div class="blog-category">Technical Deep Dive</div>
-                    <h3>Achieving Photorealistic Subsurface Scattering</h3>
-                    <p>The science behind realistic skin rendering and how we're implementing it in our generation pipeline...</p>
-                    <div class="blog-meta">
-                        <span class="blog-date">Nov 5, 2025</span>
-                        <span class="blog-read-time">8 min read</span>
-                    </div>
-                </article>
-                
-                <article class="blog-card">
-                    <div class="blog-category">Founder Journey</div>
-                    <h3>Starting with $360: The Bootstrap Chronicles</h3>
-                    <p>Building a competitive AI startup with minimal capital - lessons from the first month...</p>
-                    <div class="blog-meta">
-                        <span class="blog-date">Nov 1, 2025</span>
-                        <span class="blog-read-time">6 min read</span>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Waitlist Section -->
-    <section id="waitlist" class="waitlist">
-        <div class="container">
-            <div class="waitlist-content">
-                <h2>Join the Revolution</h2>
-                <p>Be the first to access GLICMACK when we launch. Get exclusive updates, early access, and behind-the-scenes content.</p>
-                
-                <form class="waitlist-form" id="waitlistForm">
-                    <input 
-                        type="email" 
-                        placeholder="Enter your email" 
-                        required 
-                        id="emailInput"
-                        class="email-input"
-                    >
-                    <button type="submit" class="button button-primary">Join Waitlist</button>
-                </form>
-                
-                <p class="waitlist-note">🔒 We respect your privacy. Unsubscribe anytime.</p>
-                
-                <div id="formMessage" class="form-message"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>GLICMACK</h3>
-                    <p>Complete game generation AI.<br></p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Product</h4>
-                    <a href="#features">Features</a>
-                    <a href="roadmap.html">Roadmap</a>
-                    <a href="blog.html">Blog</a>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <a href="about.html">About</a>
-                    <a href="#waitlist">Contact</a>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Follow</h4>
-                    <a href="https://twitter.com/glicmack" target="_blank">Twitter/X</a>
-                    <a href="https://youtube.com/@glicmack" target="_blank">YouTube</a>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Laveble AI. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
